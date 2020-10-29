@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+
+  each mes in messages
+    div
+      h3= mes.user
+      p #{mes.text}
+      span #{mes.added}
